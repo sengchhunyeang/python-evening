@@ -19,9 +19,10 @@ print(myValue)
 numberA= int(input("numberA: "))
 numberB = int(input("numberB :"))
 
-
 print("=================Answer==============")
 print(numberA ,"-",numberA ,"=",numberA-numberB)
 print(numberA ,"+",numberA ,"=",numberA+numberB)
 print(numberA ,"*",numberA ,"=",numberA*numberB)
 print(numberA ,"%",numberA ,"=",numberA/numberB)
+
+
