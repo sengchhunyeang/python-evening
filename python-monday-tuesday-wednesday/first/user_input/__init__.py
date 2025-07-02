@@ -8,4 +8,7 @@
 # Convert Float
 # Using UserInput
 userInput = input("pls Enter : ")
-variable = int(userInput)
+#using function int()
+print(int(userInput))
+print(type(userInput))
+print(float(userInput))
