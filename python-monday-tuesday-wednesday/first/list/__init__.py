@@ -61,3 +61,5 @@ python.append() # insert item tO list by last index
 # update
 # insert
 # Modify
+setM = {"jo","KhM"}
+print(setM)
