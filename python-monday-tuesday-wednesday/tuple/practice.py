@@ -20,7 +20,6 @@ conTupleToList[3] = 4
 conTupleToList[4] = 5
 conTupleToList[5] = 6
 print("List Changed :", conTupleToList)
-
 numberTuple = (5, "Apple", 6, 6, 7, 8)
 log = numberTuple[1]
 showIndex = numberTuple.index(8)

@@ -21,6 +21,7 @@ number =[2,4,5,7,9,1]
 print("Original List :",number)
 number.append("Apple")
 print("Append List :",number)
-
+# using clear funtion for clear items all in list 
 clearList = number.clear()
 print("USing CLearn function :",number.clear())
+

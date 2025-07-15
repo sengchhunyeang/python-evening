@@ -7,10 +7,8 @@ print("name list having removed :",nameList)
 nameList.remove("String")
 print("namelist removed String :",nameList)
 print("Original nameList:",nameList)
-
 nameList.insert(3,"Apple")
 print("after add apple :",nameList)
 nameList.append("Orange")
-
 print(nameList)
 
