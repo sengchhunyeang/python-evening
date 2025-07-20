@@ -7,5 +7,10 @@ car = {
 print(car)
 print(car["brand"])
 logKeyCar = car.keys()
-print("key of car :",logKeyCar)
+print("key of car :",logKeyCar) # keys
 print(car["year"])
+
+# list 
+# tuple
+# set 
+# dictionarie 

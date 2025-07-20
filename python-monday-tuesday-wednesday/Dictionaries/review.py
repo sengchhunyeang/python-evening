@@ -17,9 +17,10 @@
 # print(fromKey)
 car = {
     "brand":"ford",
-    "color":None,
+    "color":"Red",
     "Model":"Ranger"
 }
-valueSetDefault = car.setdefault("color","Blue")
+valueSetDefault = car.setdefault("color","Blue") #
+
 
 print(valueSetDefault)
