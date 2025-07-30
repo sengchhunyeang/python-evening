@@ -35,5 +35,6 @@ print("How to concatenate using f (format for use {})")
 print(f"his name :{name}\n His Gender :{gender}\n He living :{live}") # 2 way 
 print("How to concatenate using + :")
 print("his name :"+name+"His Gender :"+gender+"He living :"+live)
-
-
+# Homework 
+# 1 How to declare variable 10 (Text,number,boolean)
+# 2 How to concatenat string text 3 way 
