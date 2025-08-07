@@ -16,12 +16,12 @@ class UserManager:
     def add_user(self, user_id, name, email):
         user = User(user_id, name, email)
         self.users.append(user)
-        print("✅ User added successfully.")
+        print("User added successfully.")
 
     # Read
     def view_users(self):
         if not self.users:
-            print("⚠️ No users found.")
+            print("No users found.")
         for user in self.users:
             print(user)
 
@@ -33,8 +33,7 @@ class UserManager:
                 user.email = new_email
                 print("✅ User updated successfully.")
                 return
-        print("❌ User not found.")
-
+        print(" User not found.")
     # Delete
     def delete_user(self, user_id):
         for user in self.users:
@@ -42,7 +41,7 @@ class UserManager:
                 self.users.remove(user)
                 print("🗑️ User deleted successfully.")
                 return
-        print("❌ User not found.")
+        print("User not found.")
 
 
 # Sample usage
