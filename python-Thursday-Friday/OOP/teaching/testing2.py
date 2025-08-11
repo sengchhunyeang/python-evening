@@ -23,15 +23,22 @@
 # # viseth.getDataPerson()
 
 # chhunyeang.getDataPerson()
-class Persons:
-    def __init__(self,id,age,name):
-         self.id = id
-         self.age = age
-         self.name = name
-       
-    def get_info(self): # just print or show data for user (Method)
-        print(" person's id digit is:", self.id) 
-        print(" person's age is:", self.age)
-        print(" person's name is:", self.name)
-chhunyeang =Persons("89","78","Yeang") # insert data 
-chhunyeang.get_info()
+# class Persons:
+#     def __init__(self,id,age,name):
+#          self.id = id
+#          self.age = age
+#          self.name = name
+#
+#     def get_info(self): # just print or show data for user (Method)
+#         print(" person's id digit is:", self.id)
+#         print(" person's age is:", self.age)
+#         print(" person's name is:", self.name)
+# chhunyeang =Persons("89","78","Yeang") # insert data
+# chhunyeang.get_info()
+
+from colorama import Fore, Back, Style
+print(Fore.RED + 'some red text')
+print(Back.GREEN + 'and with a green background')
+print(Style.DIM + 'and in dim text')
+print(Style.RESET_ALL)
+print('back to normal now')

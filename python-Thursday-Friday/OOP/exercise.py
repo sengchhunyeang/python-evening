@@ -15,12 +15,23 @@
 # print("age :",visethAge)
     
 
-from colorama import init, Fore, Style
+# state : Data => ID name age...
+# method : sleep,work,running,working
 
-# Initialize colorama
-init(autoreset=True)
 
-print(Fore.GREEN + "✅ Success message")
-print(Fore.RED + "❌ Error message")
-print(Fore.YELLOW + "⚠️ Warning")
-print(Style.BRIGHT + "Bold Text")
+
+
+
+class Person:
+    def __init__(self,id, name, age):
+        self.id = id
+        self.name = name
+        self.age = age
+
+
+# thea_reach = Person()
+# variable = thea_reach.person_id
+# print("ID",variable)
+# thea_reach.person_sleep()
+
+
