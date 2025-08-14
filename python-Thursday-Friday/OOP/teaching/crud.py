@@ -32,7 +32,7 @@ class UserManager:
                 user.name = new_name
                 user.email = new_email
                 print("User updated successfully.")
-                return
+                return # return here is used to stop the function
         print(" User not found.")
     # Delete
     def delete_user(self, user_id):
