@@ -2,7 +2,7 @@ from turtle import *
 
 speed(0)        # Fastest drawing speed
 bgcolor('black') # Black background
-color('orange')  # Orange drawing color
+color('green')  # Orange drawing color
 hideturtle()     # Hide the turtle cursor
 
 n = 1

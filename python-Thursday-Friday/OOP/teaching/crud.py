@@ -31,7 +31,7 @@ class UserManager:
             if user.user_id == user_id:
                 user.name = new_name
                 user.email = new_email
-                print("✅ User updated successfully.")
+                print("User updated successfully.")
                 return
         print(" User not found.")
     # Delete
