@@ -1,5 +1,4 @@
-END = "\033[0m"
-GREEN = "\033[0;32m"
+from colorama import Fore as Color
 
 
 class User:
@@ -9,7 +8,7 @@ class User:
         self.email = email
 
     def __str__(self):
-        return f"ID:{self.user_id}\nUserName:{self.name}\nUserEmail:{self.email}"
+        return f"ID:{Color.BLUE}{self.user_id}{Color.RESET}\nUserName:{self.name}\nUserEmail:{self.email}"
 
 
 class UserMager:
@@ -21,27 +20,30 @@ class UserMager:
         user = User(user_id, name, email)
         self.users.append(user)
         # print(Fore.RED + 'some red text')
-        print(f"{GREEN}User added successfully.{END}")
+        print(f"{Color.GREEN}User added successfully.{Color.RESET}")
 
     def view_user(self):
         for user in self.users:
             print(user)
 
-    def update_user(self, user_id, new_name, new_email):
+    def update_users(self, find_user_id, new_name, new_email):
         for user in self.users:
-            if user.user_id == user_id:
+            # check id , Find id
+            if user.user_id == find_user_id:
                 user.name = new_name
                 user.email = new_email
-                print(f"{GREEN}User updated successfully.{END}")
+                print(f"{Color.GREEN}Update successfully{Color.RESET}")
                 return
-        print("not found")
-    def delete_user(self,user_id):
+        print(f"{Color.YELLOW}ID not found {Color.RESET}")
+
+    # delete
+    def delete_user(self, delete_user_id):
         for user in self.users:
-            if user.user_id == user_id:
+            if user.user_id == delete_user_id:
                 self.users.remove(user)
-                print(f"{GREEN}User deleted successfully.{END}")
-                return
-        print("not found")
+                print(f"{Color.GREEN}Delete user successfully {Color.RESET}")
+            return
+        print(f"{Color.YELLOW}users not found {Color.RESET}")
 
 
 def display_menu():
@@ -65,13 +67,16 @@ def input_option(option):
         obj.view_user()
     elif option == "3":
         print("3-Update User")
-        obj.update_user(
-            user_id=(input("Enter ID: ")),
-            new_name=input("Enter new name: "),
-            new_email=input("Enter new email: "))
+        obj.update_users(
+            find_user_id=input("update id :"),
+            new_name=input("update name :"),
+            new_email=input("update email :")
+        )
     elif option == "4":
         print("4-Delete User")
-        obj.delete_user(user_id=(input("Enter ID: ")))
+        obj.delete_user(
+            delete_user_id=input("user id :")
+        )
     elif option == "5":
         print("Program exiting...")
         exit(0)
@@ -80,8 +85,8 @@ def input_option(option):
 
 
 obj = UserMager()
-obj.add_users("1","Kirivong","kivirivong@gmail.com")
-obj.add_users("2","chan dara","dara@gmail.com")
+obj.add_users("1", "Kirivong", "kivirivong@gmail.com")
+obj.add_users("2", "chan dara", "dara@gmail.com")
 while True:
     display_menu()
     opt = input("choose option do you want :")

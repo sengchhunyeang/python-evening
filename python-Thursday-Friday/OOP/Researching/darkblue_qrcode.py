@@ -2,10 +2,9 @@
 # https://realpython.com/python-generate-qr-code/
 # python -m pip install segno
 import segno
-var = input("drop link :")
-qrcode = segno.make_qr(var)
+qrcode = segno.make_qr("https://github.com/sengchhunyeang/python-evening.git")
 qrcode.save(
     "darkblue_qrcode.png",
-    scale=100,
+    scale=80,
     dark="pink",
 )
