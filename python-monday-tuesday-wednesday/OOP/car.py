@@ -27,11 +27,10 @@ class Student:
     student_age = ""
 
 class IdentityCard:
-    id
+    id_card = ""
 
 class ClassStudy:
     class_id =" Room D "
     class_subject = "Python"
 
-classStudent = ClassStudy() # create object
-classStudent.class_id
+
