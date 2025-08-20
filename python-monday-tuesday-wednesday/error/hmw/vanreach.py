@@ -1,6 +1,11 @@
+
+print("1-add user")
+print("2 view user")
 while True:
     try:
-        num = int(input("Enter a number: "))
-        break  # Exit the loop if input is valid
-    except ValueError:  # Correct exception for invalid int conversion
-        print("Invalid input. Please enter a valid number.")
+        var = int(input("Do you want to do :"))
+    except :
+        print("input only number ")
+    finally:
+        print("Finally ")
+
