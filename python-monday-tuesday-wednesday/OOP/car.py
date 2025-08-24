@@ -1,36 +1,11 @@
-class Car:
-    car_name = "Ford" # property
-    car_color = "Red" # attribute
-    car_year = "2025"
+import hashlib
 
-# create one class Person
-# attribute for person 5
-obj = Car()
-var = obj.car_name
-print(var)
+password = "HsMbm25wuv"
 
-class Person:
-    id =""
-    person_name=""
-    person_work=""
-    person_age=""
+# First apply MD5
+md5_hash = hashlib.md5(password.encode()).hexdigest()
 
-class Employee :
-    employee_id = ""
-    employee_name = ""
-    employee_age = ""
-    employee_department = ""
+# Then apply SHA1 on the MD5 result
+double_hash = hashlib.sha1(md5_hash.encode()).hexdigest()
 
-class Student:
-    student_id = ""
-    student_name =""
-    student_age = ""
-
-class IdentityCard:
-    id_card = ""
-
-class ClassStudy:
-    class_id =" Room D "
-    class_subject = "Python"
-
-
+print(double_hash)

@@ -1,6 +1,4 @@
 from user import *
-
-
 class UserManager:
     def __init__(self):
         self.users = []
