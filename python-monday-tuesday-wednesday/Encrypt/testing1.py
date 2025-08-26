@@ -1,6 +1,5 @@
 import hashlib
-
-password = "HsMbm25wuv"
+password = "chhunyeang123"
 
 # First apply MD5
 md5_hash = hashlib.md5(password.encode()).hexdigest()
