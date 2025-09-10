@@ -9,10 +9,16 @@ myList = ["English","Korean","Khmer"] # 3item = 3index=
 # print(type(myList))
 # print("My data :",myList)
 # print("My Index :",myList[1]) # korean 
-number = input()
-for i in range(1, 11):
-        result = number * i
-        print(f"{number} x {i} = {result}")
+
+
+
+multi = int(input("Input multi number: "))
+number = int(input("Input number: "))
+
+for i in range(1, number + 1):   # start from 1 up to number
+    result = multi * i
+    print(f"{multi} x {i} = {result}")
+
     
 # 5 * 1 = 5 
 # 5 * 2 = 10
