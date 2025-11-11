@@ -1,11 +1,19 @@
-# Welcome to ICT 
-# I am chhunyeang
-# I am instructor at ICT 
-# and today guide student for python programming 
+# Traffic Light Simulation
 
-print("Welcome TO ICT ") # jUst a print 
-print("I am chhunyeang")
-print("I am instructor at ICT ")
-print(1) # print number
+print("===== Traffic Light Simulation =====")
 
+# Get user input
+color = input("Enter traffic light color (red, yellow, green): ").lower()
 
+# Check the color and give action
+if color == "red":
+    action = "Stop!"
+elif color == "yellow":
+    action = "Get ready to move!"
+elif color == "green":
+    action = "Go!"
+else:
+    action = "Invalid color! Please enter red, yellow, or green."
+
+# Print result
+print(f"Traffic light is {color}. Action: {action}")
