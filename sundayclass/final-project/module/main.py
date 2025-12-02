@@ -1,0 +1,4 @@
+from banking import *
+
+deposit()
+

@@ -1,10 +1,27 @@
-x = 10
-match x:
+# match ??
+
+number = 10
+
+match number:
     case 0:
-        print("zero")
+        print("number is Zero")
     case 1:
-        print("one")
+        print("number is One ")
     case 2:
-        print("two")
-    case _:
-        print("something else")
+        print("number is Two")
+    case _:  # else
+        print("number have not matched ")
+
+
+# condition ??
+password = "admin123"
+if password == "admin123":
+    print("Login Successful")
+
+# match ??
+day = "Monday"
+match day:
+    case "Monday":
+        print("Today is Monday")
+    case "Tuesday":
+        print("Today is Tuesday")
