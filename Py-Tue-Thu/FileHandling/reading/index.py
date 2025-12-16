@@ -1,4 +1,8 @@
 # open("filename", "mode")
-file = open("testing.txt","r")
-context = file.read()
-print(context)
+# with open("python.txt","w") as file:
+#     file.write("Testing python wring text ")
+
+with open("python.txt","r") as file :
+    show = file.read()
+    print(show)
+
